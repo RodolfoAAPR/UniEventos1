@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniEventos</title>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+    <header>
+        <h1>Os Melhores Eventos da Região</h1>
+        <img src=" imagens/Unidev.jpg" widht="50" height="100" alt="Logo Unidev">
+        <nav>
+            <ul>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="eventos">
+        <h2>Próximos Eventos</h2>
+        <div class="evento">
+            <h3>Ryoukai Meet 3ª Edição 26/07</h3>
+            <img src="imagens/ryoukai.png" width="300">
+            <p>Ryoukai Meet é o melhor evento destinado aos Gearheads da região!</p>
+            <button onclick="inscrever('Ryoukai Meet')">Inscrever-se</button>
+        </div>
+        <div class="evento">
+            <h3>Chitãozinho e Xororó em Maringá! 10/08</h3>
+            <img src="imagens/sertanejo.jpg" width="300" height="170">
+            <p>Venha aproveitar o espetáculo de uma das duplas mais consagradas do sertanejo brasileiro!</p>
+            <button onclick="inscrever('Chitãozinho e Xororó')">Inscrever-se</button>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="login-username">Email:</label>
+            <input type="text" id="login-username" name="username" required>
+            <label for="login-password">Senha:</label>
+            <input type="password" id="login-password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="register">
+        <h2>Registrar</h2>
+        <form id="register-form">
+            <label for="register-name">Nome Completo:</label>
+            <input type="text" id="register-name" name="fullname" required>
+            <label for="register-username">Email:</label>
+            <input type="text" id="register-username" name="username" required>
+            <label for="register-password">Senha:</label>
+            <input type="password" id="register-password" name="password" required>
+            <button type="submit">Registrar</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
